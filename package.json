@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "start": "live-server --open=public --entry-file=index.html",
-    "e2e": "cypress open"
+    "build": "parcel public/index.html",
+    "e2e": "cypress open",
+    "deploy": "gh-pages -d build"
   },
   "repository": {
     "type": "git",
@@ -19,8 +21,10 @@
   },
   "homepage": "https://github.com/platzi/laboratorio-fakestore#readme",
   "devDependencies": {
-    "live-server": "^1.1.0"
+    "live-server": "^1.1.0",
+    "parcel": "^2.8.2"
   },
+  "browserslist": "> 0.5%, last 2 versions, not dead",
   "dependencies": {
     "cypress": "^10.2.0"
   }
