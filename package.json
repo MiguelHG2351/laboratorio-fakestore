@@ -2,12 +2,12 @@
   "name": "laboratorio-fakestore",
   "version": "1.0.0",
   "description": "FakeStore",
-  "main": "index.js",
+  "source": "public/index.html",
   "scripts": {
     "start": "live-server --open=public --entry-file=index.html",
-    "build": "parcel public/index.html",
+    "build": "parcel build public/index.html",
     "e2e": "cypress open",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d dist"
   },
   "repository": {
     "type": "git",
@@ -21,6 +21,8 @@
   },
   "homepage": "https://github.com/platzi/laboratorio-fakestore#readme",
   "devDependencies": {
+    "@parcel/compressor-brotli": "^2.8.2",
+    "@parcel/compressor-gzip": "^2.8.2",
     "gh-pages": "^4.0.0",
     "live-server": "^1.1.0",
     "parcel": "^2.8.2"
