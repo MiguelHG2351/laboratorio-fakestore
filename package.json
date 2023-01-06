@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/platzi/laboratorio-fakestore#readme",
   "devDependencies": {
+    "gh-pages": "^4.0.0",
     "live-server": "^1.1.0",
     "parcel": "^2.8.2"
   },
