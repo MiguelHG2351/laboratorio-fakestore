@@ -1,0 +1,57 @@
+@import "https://fonts.googleapis.com/css?family=Open+Sans:300,400&display=swap";
+body {
+  color: #3c484e;
+  margin: 0;
+  padding: 0;
+  font-family: Open Sans, sans-serif;
+}
+
+.Main {
+  grid-template-columns: minmax(auto, 768px);
+  justify-content: center;
+  padding: 10px;
+  display: grid;
+}
+
+.Items {
+  grid-gap: 1.5rem;
+  grid-row-gap: 1.5em;
+  grid-template-columns: repeat(2, 1fr);
+  display: grid;
+}
+
+.Card {
+  border-radius: 5px;
+  margin: 0 0 20px;
+  text-decoration: none;
+  animation-name: fade;
+  animation-duration: 4s;
+  display: block;
+  box-shadow: 8px 14px 38px #272c310f, 1px 3px 8px #272c3108;
+}
+
+.Card img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px 5px 0 0;
+}
+
+.Card h2 {
+  justify-content: space-between;
+  padding: 5px 10px;
+  font-size: 18px;
+  font-weight: 300;
+  display: flex;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+/*# sourceMappingURL=index.c180ac0f.css.map */
