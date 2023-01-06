@@ -34,7 +34,6 @@ jobs:
 
     steps:
       - name: Deploy to GitHub Pages
-        env:
         id: deployment
         uses: actions/deploy-pages@v1
       - name: Override page_url
