@@ -1,0 +1,14 @@
+name: Deploy to gh-pages branch
+on: [push]
+jobs:
+  gh-run:
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Checkout
+      - uses: actions/checkout@v2
+      - name: Install dependencies
+        run: npm ci
+      - name: Build App
+        run: npm run build
+      - name: Deploy to branch
+        run: npm run deploy
